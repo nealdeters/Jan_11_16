@@ -1,3 +1,11 @@
 <p>The page should return 6 randomly generated numbers between 1 and 60 so as to predict the upcoming lotto numbers.</p>
 
-<p>Your random numbers are: <%= @numbers %></p>
+<p>Display the lotto numbers as an unordered list, with each number in its own list item.</p>
+
+<p>Your random numbers are: 
+  <ul>
+    <% @numbers.each do |t| %>
+      <li><%= t %></li>
+    <% end %>
+  </ul>
+</p>
