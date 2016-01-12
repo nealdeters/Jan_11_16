@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1><a href="/">Test Site</a></h1>
+
+<%= yield %>
+
+<a href="fortune.html">Fortune</a>
+<br>
+<a href="random.html">Random Number</a>
+<br>
+<a href="counter.html">Page Counter</a>
+<br>
+<a href="bottles.html">99 Bottles of Beer</a>
+
+</body>
+</html>
