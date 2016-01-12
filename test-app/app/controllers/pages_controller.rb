@@ -33,13 +33,16 @@ class PagesController < ApplicationController
   end
 
   def bottles
+    @lyrics = ""
     count = 99
 
     while count > 0
-      "#{count} bottles of beer on the wall, #{count} bottles of beer, take one down pass it around " + (count - 1).to_s + " bottles of beer on the wall"
+      @lyrics += "#{count} bottles of beer on the wall, #{count} bottles of beer, take one down pass it around " + (count - 1).to_s + " bottles of beer on the wall."
 
       count-= 1
     end
+
+    @lyrics
 
   end
 
