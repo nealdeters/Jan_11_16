@@ -15,17 +15,13 @@ class PagesController < ApplicationController
 
   def random
     # return 6 randomly generated numbers between 1 and 60 so as to predict the upcoming lotto numbers
-    # num1 = rand(1..60)
-    # num2 = rand(1..60)
-    # num3 = rand(1..60)
-    # num4 = rand(1..60)
-    # num5 = rand(1..60)
-    # num6 = rand(1..60)
-    @numbers = [rand(1..60), rand(1..60), rand(1..60), rand(1..60), rand(1..60), rand(1..60)]
 
-    # @numbers = "#{num1} #{num2} #{num3} #{num4} #{num5} #{num6}"
+    @numbers = []
 
-    #<li><%= @numbers %></li>
+    6.times do |number|
+      number = rand(1..60)
+      @numbers << number
+    end
   end
 
   def counter
