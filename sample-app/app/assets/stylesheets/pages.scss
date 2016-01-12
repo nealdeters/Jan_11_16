@@ -1,0 +1,23 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: white;
+}
+
+ul {
+    list-style: disc outside none;
+}
