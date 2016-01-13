@@ -5,23 +5,28 @@ class PagesController < ApplicationController
 
   def fortune
     # tell you a random fortune. Every time you refresh the page, you’ll get a new fortune
-    fortune = ["You will soon become rich", "You will be engaged within the next month", "You gone die"]
+    
+    # fortune = ["You will soon become rich", "You will be engaged within the next month", "You gone die"]
 
-    random_number = rand(0..2)
+    # random_number = rand(0..2)
 
-    @sign = fortune[random_number]
+    # @sign = fortune[random_number]
+
+    @sign = ["You will soon become rich", "You will be engaged within the next month", "You gone die"].sample
 
   end
 
   def random
     # return 6 randomly generated numbers between 1 and 60 so as to predict the upcoming lotto numbers
 
-    @numbers = []
+    # @numbers = []
 
-    6.times do |number|
-      number = rand(1..60)
-      @numbers << number
-    end
+    # 6.times do |number|
+    #   number = rand(1..60)
+    #   @numbers << number
+    # end
+
+    @numbers = Array.new(6) { rand(1..60) }
   end
 
   def counter

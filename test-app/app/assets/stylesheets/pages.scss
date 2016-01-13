@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.home-icon{
-  text-decoration: none;  
+#home-icon{
+  text-decoration: none;
+}
+
+.nav {
+  padding-left: 20px;
+}
+
+#nav-menu {
+  margin: auto;
+  width: 500px;
 }
